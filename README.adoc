@@ -1,18 +1,20 @@
 = Bayesian Aggregation of Categorical Distributions with Applications in Crowdsourcing
 Alexandry Augustin, Matteo Venanzi, Alex Rogers, Nicholas R. Jennings
+:sectnums:
 :toc: preamble
 :stem: latexmath
-
+:augustin_2017: https://www.ijcai.org/Proceedings/2017/0195
 :url-semeval-2007: https://web.eecs.umich.edu/~mihalcea/affectivetext/
 :url-iapr-tc12: https://www.imageclef.org/SIAPRdata
 :url-bbc-article: https://www.bbc.co.uk/news/world-asia-40913650
 :url-infer-net: https://dotnet.github.io/infer/
-:url-infer-net-download: https://dotnet.github.io/infer/download.html
+:url-infer-net-github: https://github.com/dotnet/infer
 :url-vscode: https://code.visualstudio.com/
 :url-vscode-download: https://code.visualstudio.com/Download
 :url-ibcc-paper: http://proceedings.mlr.press/v22/kim12.html
+:url-monodevelop: https://www.monodevelop.com/
 
-This repository contains the code, manuscript, datasets, and other materials accompanying our work published as a https://www.ijcai.org/Proceedings/2017/0195[research paper] to the International Joint Conferences on Artificial Intelligence (IJCAI). 
+This repository contains the code, manuscript, datasets, and other materials accompanying our work published as a {augustin_2017}[research paper] to the International Joint Conferences on Artificial Intelligence (IJCAI). 
 
 == Motivation
 
@@ -94,7 +96,7 @@ image::./manuscript/res/m-bcc_fg.svg[alt=mbcc-factor-graph,width=400]
 
 == Software Implementation
 
-All source code used to generate the results and figures in the paper are in the `src` directory. 
+All source code used to generate the results and figures in the paper are in the `src` and `scripts` directory. 
 The data used in this study is provided in `data` and the sources for the manuscript text and figures are in `manuscript`. 
 The poster and presentation can be found in `poster/poster.pdf` and `poster/presentation.pdf` respectively.
 
@@ -110,14 +112,16 @@ or https://github.com/alexandry-augustin/mbcc/archive/master.zip[download a zip 
 
 === Dependencies
 
-You'll need a working https://www.python.org/[Python] environment and the {url-infer-net}[Infer.NET] library to run the code. 
+The model was developed on Ubuntu Linux using {url-monodevelop}[MonoDevelop] as IDE.
+
+You'll need a working https://www.python.org/[Python] environment and the {url-infer-net}[Infer.NET 2.6] library to run the code. 
 
 == Citation
 
 If you use our code or dataset, please cite as follows:
 
 ....
-@inproceedings{augustin2017bayesian,
+@inproceedings{augustin2017mbcc,
   title={Bayesian aggregation of categorical distributions with applications in crowdsourcing},
   author={Augustin, Alexandry and Venanzi, Matteo and Hare, J and Rogers, A and Jennings, NR},
   year={2017},
